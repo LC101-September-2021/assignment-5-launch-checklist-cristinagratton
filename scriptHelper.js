@@ -31,10 +31,10 @@ function validateInput(testInput) {
 function formSubmission(document, pilot, copilot, fuelLevel, cargoLevel) {
     //validation 
     if (pilot === "" || copilot === "" || fuelLevel === "" || cargoLevel === "") {
-        alert("All fields are required!");
+        window.alert("All fields are required!");
         event.preventDefault();
     } else if (validateInput(pilot) === 'Is a Number' || validateInput(copilot) === 'Is a Number' || validateInput(fuelLevel) === 'Not a Number' || validateInput(cargoLevel) === 'Not a Number') {
-        alert("Invalid Input");
+        window.alert("Invalid Input");
         event.preventDefault();
     } else {
         //changing status
