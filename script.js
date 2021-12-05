@@ -1,7 +1,9 @@
 // Write your JavaScript code here!
 
 window.addEventListener("load", function() {
-
+    let faultyItems  = document.getElementById("faultyItems");
+    faultyItems.style.visibility = "hidden";
+    
    let form = document.querySelector("form");
    form.addEventListener("submit", function(event) {
     event.preventDefault();
