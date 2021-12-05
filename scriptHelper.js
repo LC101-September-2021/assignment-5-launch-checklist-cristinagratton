@@ -48,6 +48,7 @@ function formSubmission(document, pilot, copilot, fuelLevel, cargoLevel) {
     </ol>`;
     document.getElementById("launchStatus").style.color = "green";
     document.getElementById("launchStatus").innerHTML = "Shuttle is ready for launch";
+    faultyItems.style.visibility = "hidden";
 
     if (fuelLevel < 10000) {
         faultyItems.style.visibility = "visible";
